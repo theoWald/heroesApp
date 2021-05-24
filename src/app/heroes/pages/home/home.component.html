@@ -1,3 +1,27 @@
 <h1>HeroesApp</h1>
 <hr>
+
+
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push">
+        <h1>Sidenav</h1>
+        <mat-toolbar>
+            <span>Menú</span>
+            <button mat-icon-button
+                (click)="sidenav.toggle()">
+                <mat-icon class="material-icons">menu</mat-icon>                       
+            </button>
+        </mat-toolbar>
+    </mat-sidenav>
+    <mat-toolbar>
+        <button mat-icon-button
+            (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>                       
+        </button>
+        <!-- <span class="material-icons md-48">face</span> 
+        <span class="material-icons">thumb_up</span> -->
+    </mat-toolbar>
+</mat-sidenav-container>
+
+
 <router-outlet></router-outlet>
