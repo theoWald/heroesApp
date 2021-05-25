@@ -28,6 +28,8 @@ export class AuthService {
               );
   }
 
-
+  logout(){
+    this._auth = undefined;
+  }
 
 }
